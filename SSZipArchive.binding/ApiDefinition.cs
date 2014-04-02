@@ -1,7 +1,7 @@
 ﻿using System;
 using MonoTouch.Foundation;
 
-namespace SSZipArchive.monotouch 
+namespace SSZipArchiveMonotouch
 {
 	[BaseType (typeof (NSObject))]
 	public partial interface SSZipArchive 

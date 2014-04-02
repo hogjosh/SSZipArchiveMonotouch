@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SSZipArchive.monotouch
+namespace SSZipArchiveMonotouch
 {
 	public struct ZipInfo
 	{

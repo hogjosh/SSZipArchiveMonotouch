@@ -8,7 +8,7 @@ XCODE_TARGET=SSZipArchive.monotouch
 MONO_PROJECT_ROOT=$(ROOT)/SSZipArchive.binding
 MONO_PROJECT=$(MONO_PROJECT_ROOT)/SSZipArchive.binding.csproj
 
-all: clean SSZipArchive.monotouch.dll
+all: clean SSZipArchiveMonotouch.dll
 
 libSSZipArchive.monotouch-i386.a:
 	$(XBUILD) -project $(XCODE_PROJECT) -target $(XCODE_TARGET) -sdk iphonesimulator -configuration Release clean build
@@ -21,9 +21,9 @@ libSSZipArchive.monotouch-ios.a:
 libSSZipArchive.monotouch.a: libSSZipArchive.monotouch-i386.a libSSZipArchive.monotouch-ios.a
 	lipo -create -output $@ $^
 
-SSZipArchive.monotouch.dll: libSSZipArchive.monotouch.a
+SSZipArchiveMonotouch.dll: libSSZipArchive.monotouch.a
 	$(MONOBUILD) /p:Configuration=Release $(MONO_PROJECT)
-	-mv $(MONO_PROJECT_ROOT)/bin/Release/SSZipArchive.monotouch.dll $(ROOT)
+	-mv $(MONO_PROJECT_ROOT)/bin/Release/SSZipArchiveMonotouch.dll $(ROOT)
 
 clean:
 	-rm -rf build *.a *.dll *.mdb

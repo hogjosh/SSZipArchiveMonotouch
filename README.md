@@ -1,4 +1,4 @@
-SSZipArchive.monotouch
+SSZipArchiveMonotouch
 ====================
 
 MonoTouch bindings for the native [SSZipArchive](https://github.com/soffes/ssziparchive)
@@ -9,4 +9,4 @@ Building
 
 1) Recursively clone this repository.
 
-2) Run 'make' to build SSZipArchive.monotouch.dll
+2) Run 'make' to build SSZipArchiveMonotouch.dll

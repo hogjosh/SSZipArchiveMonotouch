@@ -46,6 +46,18 @@ namespace SSZipArchive.monotouch
 	[Model, Protocol]
 	public partial interface SSZipArchiveDelegate 
 	{
+		[Export ("zipArchiveWillUnzipArchiveAtPath:zipInfo:")]
+		void ZipArchiveWillUnzipArchive(string atPath, ZipInfo zipInfo);
+
+		[Export ("zipArchiveDidUnzipArchiveAtPath:zipInfo:unzippedPath:")]
+		void ZipArchiveDidUnzipArchive(string atPath, ZipInfo zipInfo, string unzippedPath);
+
+		[Export ("zipArchiveWillUnzipFileAtIndex:totalFiles:archivePath:fileInfo:")]
+		void ZipArchiveWillUnzipFile(int fileIndex, int totalFiles, string archivePath, ZipInfo fileInfo);
+
+		[Export ("zipArchiveDidUnzipFileAtIndex:totalFiles:archivePath:fileInfo:")]
+		void ZipArchiveDidUnzipFile(int fileIndex, int totalFiles, string archivePath, ZipInfo fileInfo);
+
 		[Export ("zipArchiveProgressEvent:total:")]
 		void ZipArchiveProgress (int loaded, int total);
 	}

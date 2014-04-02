@@ -1,0 +1,3 @@
+[submodule "SSZipArchive.monotouch/ssziparchive"]
+	path = SSZipArchive.monotouch/ssziparchive
+	url = git:/github.com/soffes/ssziparchive

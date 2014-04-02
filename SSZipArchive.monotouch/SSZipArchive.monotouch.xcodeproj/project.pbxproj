@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E27786318EB4AF600946620 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E27786218EB4AF600946620 /* Foundation.framework */; };
+		0E2778F518EB4D6700946620 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E2778DA18EB4D6700946620 /* ioapi.c */; };
+		0E2778F618EB4D6700946620 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E2778DC18EB4D6700946620 /* mztools.c */; };
+		0E2778F718EB4D6700946620 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E2778DE18EB4D6700946620 /* unzip.c */; };
+		0E2778F818EB4D6700946620 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E2778E018EB4D6700946620 /* zip.c */; };
+		0E2778F918EB4D6700946620 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2778E318EB4D6700946620 /* SSZipArchive.m */; };
+		0E27790318EB504E00946620 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E27790218EB504E00946620 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E2778FD18EB4D6700946620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E2778E518EB4D6700946620 /* SSZipArchive.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21CC41A517DB7D1300201DDC;
+			remoteInfo = SSZipArchive;
+		};
+		0E2778FF18EB4D6700946620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E2778E518EB4D6700946620 /* SSZipArchive.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21CC41C017DB7D1300201DDC;
+			remoteInfo = SSZipArchiveTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E27785D18EB4AF600946620 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E27785F18EB4AF600946620 /* libSSZipArchive.monotouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSZipArchive.monotouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E27786218EB4AF600946620 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0E27786618EB4AF600946620 /* SSZipArchive.monotouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive.monotouch-Prefix.pch"; sourceTree = "<group>"; };
+		0E2778CA18EB4D6700946620 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0E2778D518EB4D6700946620 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0E2778D618EB4D6700946620 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		0E2778D918EB4D6700946620 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		0E2778DA18EB4D6700946620 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		0E2778DB18EB4D6700946620 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		0E2778DC18EB4D6700946620 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		0E2778DD18EB4D6700946620 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		0E2778DE18EB4D6700946620 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		0E2778DF18EB4D6700946620 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		0E2778E018EB4D6700946620 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		0E2778E118EB4D6700946620 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		0E2778E218EB4D6700946620 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		0E2778E318EB4D6700946620 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		0E2778E418EB4D6700946620 /* SSZipArchive.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSZipArchive.podspec; sourceTree = "<group>"; };
+		0E2778E518EB4D6700946620 /* SSZipArchive.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SSZipArchive.xcodeproj; sourceTree = "<group>"; };
+		0E27790218EB504E00946620 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E27785C18EB4AF600946620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E27790318EB504E00946620 /* libz.dylib in Frameworks */,
+				0E27786318EB4AF600946620 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E27785618EB4AF600946620 = {
+			isa = PBXGroup;
+			children = (
+				0E2778C918EB4D6700946620 /* ssziparchive */,
+				0E27786418EB4AF600946620 /* SSZipArchive.monotouch */,
+				0E27786118EB4AF600946620 /* Frameworks */,
+				0E27786018EB4AF600946620 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E27786018EB4AF600946620 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E27785F18EB4AF600946620 /* libSSZipArchive.monotouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E27786118EB4AF600946620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E27790218EB504E00946620 /* libz.dylib */,
+				0E27786218EB4AF600946620 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E27786418EB4AF600946620 /* SSZipArchive.monotouch */ = {
+			isa = PBXGroup;
+			children = (
+				0E27786518EB4AF600946620 /* Supporting Files */,
+			);
+			path = SSZipArchive.monotouch;
+			sourceTree = "<group>";
+		};
+		0E27786518EB4AF600946620 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E27786618EB4AF600946620 /* SSZipArchive.monotouch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E2778C918EB4D6700946620 /* ssziparchive */ = {
+			isa = PBXGroup;
+			children = (
+				0E2778CA18EB4D6700946620 /* .gitignore */,
+				0E2778D518EB4D6700946620 /* LICENSE */,
+				0E2778D618EB4D6700946620 /* Readme.markdown */,
+				0E2778D718EB4D6700946620 /* SSZipArchive */,
+				0E2778E418EB4D6700946620 /* SSZipArchive.podspec */,
+				0E2778E518EB4D6700946620 /* SSZipArchive.xcodeproj */,
+			);
+			path = ssziparchive;
+			sourceTree = "<group>";
+		};
+		0E2778D718EB4D6700946620 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				0E2778D818EB4D6700946620 /* minizip */,
+				0E2778E218EB4D6700946620 /* SSZipArchive.h */,
+				0E2778E318EB4D6700946620 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		0E2778D818EB4D6700946620 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				0E2778D918EB4D6700946620 /* crypt.h */,
+				0E2778DA18EB4D6700946620 /* ioapi.c */,
+				0E2778DB18EB4D6700946620 /* ioapi.h */,
+				0E2778DC18EB4D6700946620 /* mztools.c */,
+				0E2778DD18EB4D6700946620 /* mztools.h */,
+				0E2778DE18EB4D6700946620 /* unzip.c */,
+				0E2778DF18EB4D6700946620 /* unzip.h */,
+				0E2778E018EB4D6700946620 /* zip.c */,
+				0E2778E118EB4D6700946620 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		0E2778E618EB4D6700946620 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E2778FE18EB4D6700946620 /* SSZipArchive.app */,
+				0E27790018EB4D6700946620 /* SSZipArchiveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E27785E18EB4AF600946620 /* SSZipArchive.monotouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E27788218EB4AF600946620 /* Build configuration list for PBXNativeTarget "SSZipArchive.monotouch" */;
+			buildPhases = (
+				0E27785B18EB4AF600946620 /* Sources */,
+				0E27785C18EB4AF600946620 /* Frameworks */,
+				0E27785D18EB4AF600946620 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive.monotouch;
+			productName = SSZipArchive.monotouch;
+			productReference = 0E27785F18EB4AF600946620 /* libSSZipArchive.monotouch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E27785718EB4AF600946620 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Addico Solutions";
+			};
+			buildConfigurationList = 0E27785A18EB4AF600946620 /* Build configuration list for PBXProject "SSZipArchive.monotouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0E27785618EB4AF600946620;
+			productRefGroup = 0E27786018EB4AF600946620 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0E2778E618EB4D6700946620 /* Products */;
+					ProjectRef = 0E2778E518EB4D6700946620 /* SSZipArchive.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0E27785E18EB4AF600946620 /* SSZipArchive.monotouch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0E2778FE18EB4D6700946620 /* SSZipArchive.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SSZipArchive.app;
+			remoteRef = 0E2778FD18EB4D6700946620 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E27790018EB4D6700946620 /* SSZipArchiveTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SSZipArchiveTests.xctest;
+			remoteRef = 0E2778FF18EB4D6700946620 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E27785B18EB4AF600946620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2778F518EB4D6700946620 /* ioapi.c in Sources */,
+				0E2778F718EB4D6700946620 /* unzip.c in Sources */,
+				0E2778F818EB4D6700946620 /* zip.c in Sources */,
+				0E2778F618EB4D6700946620 /* mztools.c in Sources */,
+				0E2778F918EB4D6700946620 /* SSZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E27788018EB4AF600946620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0E27788118EB4AF600946620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E27788318EB4AF600946620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SSZipArchive_monotouch.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSZipArchive.monotouch/SSZipArchive.monotouch-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0E27788418EB4AF600946620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SSZipArchive_monotouch.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSZipArchive.monotouch/SSZipArchive.monotouch-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E27785A18EB4AF600946620 /* Build configuration list for PBXProject "SSZipArchive.monotouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E27788018EB4AF600946620 /* Debug */,
+				0E27788118EB4AF600946620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E27788218EB4AF600946620 /* Build configuration list for PBXNativeTarget "SSZipArchive.monotouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E27788318EB4AF600946620 /* Debug */,
+				0E27788418EB4AF600946620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E27785718EB4AF600946620 /* Project object */;
+}
